@@ -1,1 +1,19 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <title>Contango</title>
+        <link rel = "import" href = "http://vixcentral.com/historical/?days=9900"/>
+    </head>
+    <body>
+        <div id = "content"></div>
+    </body>
+</html>
+<script>
+    var post = document.querySelector("link[rel = 'import']").import;
+    var con = post.querySelector("div");
+    document.querySelector("#content").appendChild(con.cloneNode(true));
 
+    var clone = document.importNode(con,true)
+    document.querySelector("#content").appendChild(clone)
+</script>
