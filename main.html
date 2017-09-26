@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script src="jquery-2.1.1.min.js"></script> 
+<!--记得导jquery-->
+<script>
+    $.ajax({
+        type:'get',
+        url:"index.html",//这里是url
+        success:function(body,heads,status){
+            console.log(body);  //body就是内容了
+        }
+    });
+ 
+</script>
+</body>
+</html>
